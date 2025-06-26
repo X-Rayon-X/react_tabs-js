@@ -10,7 +10,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
             {tabs.map(tab => (
               <li
                 key={tab.id}
-                className={currentTab.id === tab.id && 'is-active'}
+                className={currentTab.id === tab.id ? 'is-active' : ''}
                 data-cy="Tab"
               >
                 <a
